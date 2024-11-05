@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Furniture extends Model
+class Pokemon extends Model
 {
     use HasFactory;
 
-    protected $table = 'furniture';
+    protected $table = 'pokemon';
     
-    protected $fillable = ['model', 'price'];
+    protected $fillable = ['name', 'type', 'height', 'weight', 'evolution', 'level'];
 }
