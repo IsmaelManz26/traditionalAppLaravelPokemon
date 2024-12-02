@@ -2,82 +2,72 @@
 
 Aplicación Tradicional de Laravel
 
-## Descripción
+# Aplicación de Pokemon Laravel
 
-Esta es una aplicación web desarrollada con el framework Laravel. La aplicación permite a los usuarios gestionar una lista de Pokémon, incluyendo funcionalidades de autenticación de usuarios, creación, edición y eliminación de Pokémon.
+Esta es una aplicación web desarrollada en Laravel que permite a los usuarios crear, ver y listar pokemon.
 
-## Requisitos
 
-- PHP ^8.2
-- Composer
-- Node.js y npm
+![1](images/1.jpg)
+
+
+
+![2](images/2.jpg)
+
+
+
+![3.2](images/3.jpg)
+
+
+![4](images/4.jpg)
+
+
 
 ## Instalación
 
+Sigue estos pasos para descargar y configurar el repositorio:
+
 1. Clona el repositorio:
+
     ```sh
-    git clone <URL_DEL_REPOSITORIO>
-    cd traditionalLaravelApp
+    git clone https://github.com/aluqmor/pokemonAppLaravel.git
     ```
 
-2. Instala las dependencias de PHP:
+2. Navega al directorio del proyecto:
+
+    ```sh
+    cd tu-repositorio
+    ```
+
+3. Instala las dependencias de Composer:
+
     ```sh
     composer install
     ```
 
-3. Instala las dependencias de Node.js:
-    ```sh
-    npm install
+4. Copia el archivo database.sql y crea la base de datos junto con usuario y contraseña.
+
+5. Cambia el nombre de `.env.example` a `.env`.
+
+6. Configura tu base de datos en el archivo `.env`:
+
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=nombre_de_tu_base_de_datos
+    DB_USERNAME=tu_usuario
+    DB_PASSWORD=tu_contraseña
     ```
 
-4. Copia el archivo de entorno y genera la clave de la aplicación:
+7. Genera la clave de la aplicación:
+
     ```sh
-    cp .env.example .env
     php artisan key:generate
     ```
 
-5. Configura tu base de datos en el archivo `.env`.
+8. Ejecuta las migraciones para crear las tablas necesarias:
 
-6. Ejecuta las migraciones de la base de datos:
     ```sh
     php artisan migrate
     ```
 
-## Uso
-
-1. Inicia el servidor de desarrollo:
-    ```sh
-    php artisan serve
-    ```
-
-2. Compila los assets:
-    ```sh
-    npm run dev
-    ```
-
-3. Accede a la aplicación en tu navegador en `http://localhost:8000`.
-
-## Estructura del Proyecto
-
-- `app/Http/Controllers`: Contiene los controladores de la aplicación.
-- `resources/views`: Contiene las vistas Blade de la aplicación.
-- `database/migrations`: Contiene las migraciones de la base de datos.
-- `public/assets`: Contiene los archivos estáticos como JavaScript y CSS.
-
-## Funcionalidades
-
-- Autenticación de usuarios (login y logout).
-- Gestión de Pokémon (crear, editar, eliminar, ver).
-- Mensajes flash para notificaciones de éxito y error.
-
-## Contribuir
-
-1. Haz un fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
-4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
