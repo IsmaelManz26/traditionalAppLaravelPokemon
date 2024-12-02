@@ -6,20 +6,36 @@ Aplicación Tradicional de Laravel
 
 Esta es una aplicación web desarrollada en Laravel que permite a los usuarios crear, ver y listar pokemon.
 
-
-![1](images/1.jpg)
-
-
-
-![2](images/2.jpg)
+Home
+![1](1.png)
 
 
+Home de pokemon con la lista
+![2](2.png)
 
-![3.2](images/3.jpg)
+
+Loggin
+![3](3.png)
 
 
-![4](images/4.jpg)
+Lista de pokemon con login realizado
+![4](4.png)
 
+
+Página de edición de un pokemon 
+![5](5.png)
+
+
+Página de view de un pokemon 
+![6](6.png)
+
+
+Página de delete de un pokemon 
+![7](7.png)
+
+
+Página de creación de un pokemon 
+![8](8.png)
 
 
 ## Instalación
